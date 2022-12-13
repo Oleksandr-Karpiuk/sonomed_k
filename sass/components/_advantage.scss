@@ -1,0 +1,29 @@
+.advantage {
+  background-color: var(--team-bcg-color);
+}
+
+.advantage__list {
+  display: flex;
+  gap: 30px;
+}
+
+.advantage__item {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+.advantage__wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+
+.advantage__text {
+  font-size: 16px;
+  text-align: center;
+}
+
+.advantage__icons {
+  fill: var(--focus-color);
+}

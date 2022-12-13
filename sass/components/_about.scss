@@ -1,0 +1,23 @@
+.about__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  order: -1;
+  gap: 40px;
+  margin-right: 20px;
+}
+
+.about__item {
+  width: 500px;
+}
+
+.about__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.17;
+}

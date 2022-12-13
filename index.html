@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сономед К</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -16,9 +18,9 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <a href="" aria-label="Логотип медичного центру">
+    <header class="header">
+      <div class="header-container">
+        <a href="" aria-label="Логотип медичного центру" class="logo">
           <img
             src="./images/logo.png"
             alt="Логотип медичного центру"
@@ -26,32 +28,44 @@
             height="61"
           />
         </a>
-        <nav>
-          <ul>
-            <li>
-              <a href="#about">Про нас</a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#about" class="header__link">Про нас</a>
             </li>
-            <li>
-              <a href="#advantage">Чому нас обирають</a>
+            <li class="header__item">
+              <a href="#advantage" class="header__link">Чому нас обирають</a>
             </li>
-            <li>
-              <a href="#services">Наші послуги</a>
+            <li class="header__item">
+              <a href="#services" class="header__link">Наші послуги</a>
             </li>
-            <li>
-              <a href="#contacts">Публікації</a>
+            <li class="header__item">
+              <a href="#contacts" class="header__link">Публікації</a>
             </li>
           </ul>
         </nav>
-        <div>
-          <ul>
-            <li>
-              <a href="mailto:Sonomed.K@gmail.com">Sonomed.K@gmail.com</a>
+        <div class="header-address">
+          <ul class="header__list header-address__list">
+            <li class="header__item header-address__item">
+              <a
+                href="mailto:Sonomed.K@gmail.com"
+                class="header__link header-address__link"
+                >Sonomed.K@gmail.com</a
+              >
             </li>
-            <li>
-              <a href="tel:+380958216465">+38(095)821-64-65</a>
+            <li class="header__item header-address__item">
+              <a
+                href="tel:+380958216465"
+                class="header__link header-address__link"
+                >(095) 821-64-65</a
+              >
             </li>
-            <li>
-              <a href="tel:+380972104649">+38(097)210-46-49</a>
+            <li class="header__item header-address__item">
+              <a
+                href="tel:+380972104649"
+                class="header__link header-address__link"
+                >(097) 210-46-49</a
+              >
             </li>
           </ul>
         </div>
@@ -60,93 +74,96 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1>Ваше здоров'я - наш пріоритет!</h1>
+          <h1 class="hero__title">Ваше здоров'я - наш пріоритет!</h1>
         </div>
       </section>
-      <section class="section about">
+      <section class="section about" id="about">
         <div class="container">
-          <h2>Про нас</h2>
-          <img
-            src="./images/korinchuk.jpg"
-            alt="Лікар Корінчук Василь Миколайович"
-            width="450"
-            height="600"
-          />
-          <ul>
-            <li>
-              <p>
-                Медичний центр «Сономед К» займається ультразвуковою
-                діагностикою внутрішніх органів та систем дорослих та дітей.
-              </p>
-            </li>
-            <li>
-              <p>
-                В медичному центрі також проводять консультації лікарі вузьких
-                спеціальностей: кардіолог, невропатолог, ендокринолог,
-                гастроентеролог, ревматолог.
-              </p>
-            </li>
-            <li>
-              <p>
-                Медичний центр створений у 2021 році лікарем з багаторічним
-                досвідом роботи — Корінчуком Василем Миколайовичем.
-              </p>
-            </li>
-            <li>
-              <p>
-                Для устаткування ми обрали обладнання експертного класу Toshiba
-                Aplio 300 та MyLab70xVG, що забезпечує кращу якість
-                ультразвукової візуалізації.
-              </p>
-            </li>
-          </ul>
-          <p></p>
+          <h2 class="section-title">Про нас</h2>
+          <div class="about__wrapper">
+            <img
+              src="./images/korinchuk.jpg"
+              alt="Лікар Корінчук Василь Миколайович"
+              width="450"
+              height="600"
+            />
+            <ul class="about__list">
+              <li class="about__item">
+                <p class="about__text">
+                  Медичний центр «Сономед К» займається ультразвуковою
+                  діагностикою внутрішніх органів та систем дорослих та дітей.
+                </p>
+              </li>
+              <li class="about__item">
+                <p class="about__text">
+                  В медичному центрі також проводять консультації лікарі вузьких
+                  спеціальностей: кардіолог, невропатолог, ендокринолог,
+                  гастроентеролог, ревматолог.
+                </p>
+              </li>
+              <li class="about__item">
+                <p class="about__text">
+                  Медичний центр створений у 2021 році лікарем з багаторічним
+                  досвідом роботи — Корінчуком Василем Миколайовичем.
+                </p>
+              </li>
+              <li class="about__item">
+                <p class="about__text">
+                  Для устаткування ми обрали обладнання експертного класу
+                  Toshiba Aplio 300 та MyLab70xVG, що забезпечує кращу якість
+                  ультразвукової візуалізації.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <section class="section advantage">
+      <section class="section advantage" id="advantage">
         <div class="container">
-          <h2>Чому нас обирають</h2>
-          <ul>
-            <li>
-              <div>
-                <svg class="" width="70" height="70">
+          <h2 class="section-title">Чому нас обирають</h2>
+          <ul class="advantage__list">
+            <li class="advantage__item">
+              <div class="advantage__wraper">
+                <svg class="advantage__icons" width="70" height="70">
                   <use href="./images/icons.svg#icon-svg_1"></use>
                 </svg>
               </div>
-              <p>Висококваліфіковані лікарі</p>
+              <p class="advantage__text">Висококваліфіковані лікарі</p>
             </li>
-            <li>
-              <div>
-                <svg class="" width="70" height="70">
+            <li class="advantage__item">
+              <div class="advantage__wraper">
+                <svg class="advantage__icons" width="70" height="70">
                   <use href="./images/icons.svg#icon-svg_2"></use>
                 </svg>
               </div>
-              <p>
+              <p class="advantage__text">
                 Обладнання експертного класу Toshiba Aplio 300 та MyLab70xVG
               </p>
             </li>
-            <li>
-              <div>
-                <svg class="" width="70" height="70">
+            <li class="advantage__item">
+              <div class="advantage__wraper">
+                <svg class="advantage__icons" width="70" height="70">
                   <use href="./images/icons.svg#icon-svg_3"></use>
                 </svg>
               </div>
-              <p>Індивідуальний підхід до кожного пацієнта</p>
+              <p class="advantage__text">
+                Індивідуальний підхід до кожного пацієнта
+              </p>
             </li>
-            <li>
-              <div>
-                <svg class="" width="70" height="70">
+            <li class="advantage__item">
+              <div class="advantage__wraper">
+                <svg class="advantage__icons" width="70" height="70">
                   <use href="./images/icons.svg#icon-svg_4"></use>
                 </svg>
               </div>
-              <p>4000+ задоволених пацієнтів за рік</p>
+              <p class="advantage__text">4000+ задоволених пацієнтів за рік</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section services">
+      <section class="section services" id="services">
         <div class="container">
-          <h2>Наші послуги</h2>
+          <h2 class="section-title">Наші послуги</h2>
           <ul>
             <li>
               <img src="./images/services/img1.jpg" alt="Вид послуги" />
@@ -179,9 +196,9 @@
           </ul>
         </div>
       </section>
-      <section class="section publications">
+      <section class="section publications" id="publications">
         <div class="container">
-          <h2>Публікації</h2>
+          <h2 class="section-title">Публікації</h2>
           <ul>
             <li>
               <img

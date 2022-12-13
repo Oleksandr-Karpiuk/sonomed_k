@@ -1,14 +1,10 @@
 .hero__title {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-
-  font-weight: 900;
+  // font-family: var(--secondary-font);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: var(--white-color);
+  color: #f5f4fa;
 
   @media screen and (max-width: 1199.98px) {
     max-width: 360px;
@@ -18,7 +14,9 @@
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 696px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 
     font-size: 44px;
     line-height: 1.36;
