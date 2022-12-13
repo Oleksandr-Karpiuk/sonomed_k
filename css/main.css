@@ -10,6 +10,7 @@
   --address-color: rgba(255, 255, 255, 0.6);
   --icons-color: #afb1b8;
   --overlay-portfolio: rgba(33, 150, 243, 0.9);
+  --bcg-advantage: rgba(33, 150, 243, 0.1);
   --duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --main-font: "Roboto", sans-serif;
@@ -332,10 +333,6 @@ ul {
   line-height: 1.17;
 }
 
-.advantage {
-  background-color: var(--team-bcg-color);
-}
-
 .advantage__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,7 +355,12 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  height: 160px;
+  background: var(--bcg-advantage);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .advantage__text {
