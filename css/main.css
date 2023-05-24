@@ -407,6 +407,13 @@ ul {
   background-color: var(--team-bcg-color);
 }
 
+.services img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 500px;
+  height: 330px;
+}
+
 .services__list {
   display: -webkit-box;
   display: -ms-flexbox;

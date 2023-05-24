@@ -2,6 +2,12 @@
   background-color: var(--team-bcg-color);
 }
 
+.services img {
+  object-fit: cover;
+  width: 500px;
+  height: 330px;
+}
+
 .services__list {
   display: flex;
   gap: 100px;
