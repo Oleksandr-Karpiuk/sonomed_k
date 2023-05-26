@@ -8,12 +8,12 @@
   height: 330px;
 }
 
-.services__list {
-  display: flex;
-  gap: 100px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+// .services__list {
+//   display: flex;
+//   gap: 100px;
+//   flex-wrap: wrap;
+//   justify-content: center;
+// }
 
 .services__wrapper {
   position: relative;
@@ -42,4 +42,26 @@
   color: var(--white-color);
 
   background-color: rgba(36, 64, 116, 0.6);
+}
+
+//  SWIPER STYLES
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+
+  width: 500px;
+  height: 330px;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
 }

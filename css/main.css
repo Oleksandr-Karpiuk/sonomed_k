@@ -59,9 +59,13 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
+}
+
+.section-title {
+  padding: 10px 0;
 }
 
 .container {
@@ -440,18 +444,6 @@ ul {
   height: 330px;
 }
 
-.services__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 100px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .services__wrapper {
   position: relative;
   overflow: hidden;
@@ -474,6 +466,26 @@ ul {
   text-transform: uppercase;
   color: var(--white-color);
   background-color: rgba(36, 64, 116, 0.6);
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 330px;
+}
+
+.swiper-slide img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 .publications__list {

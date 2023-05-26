@@ -14,6 +14,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -79,7 +83,7 @@
           <h1 class="hero__title">
             Сономед <span class="hero__title-color">К</span>
           </h1>
-          <p class="hero__text">Ваше здоров'я - наш пріоритет!</p>
+          <p class="hero__text">Ваше здоров'я &#8211; наш пріоритет!</p>
         </div>
       </section>
       <section class="section about" id="about">
@@ -172,92 +176,95 @@
       <section class="section services" id="services">
         <div class="container">
           <h2 class="section-title">Наші послуги</h2>
-          <ul class="services__list">
-            <li class="services__item">
-              <div class="services__wrapper">
-                <img
-                  src="./images/services/img1.jpg"
-                  alt="Вид послуги"
-                  width="500"
-                />
-                <p class="services__text">
-                  УЗД всіх органів та систем дорослим та дітям
-                </p>
+          <div class="swiper mySwiperServices">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="services__wrapper">
+                  <img
+                    src="./images/services/img1.jpg"
+                    alt="Вид послуги"
+                    width="500"
+                  />
+                  <p class="services__text">
+                    УЗД всіх органів та систем дорослим та дітям
+                  </p>
+                </div>
               </div>
-            </li>
-            <li class="services__item">
-              <div class="services__wrapper">
-                <img
-                  src="./images/services/img6.jpg"
-                  alt="Вид послуги"
-                  width="500"
-                />
-                <p class="services__text">
-                  Нейросонографія (УЗД головного мозку у дітей)
-                </p>
+              <div class="swiper-slide">
+                <div class="services__wrapper">
+                  <img
+                    src="./images/services/img6.jpg"
+                    alt="Вид послуги"
+                    width="500"
+                  />
+                  <p class="services__text">
+                    Нейросонографія (УЗД головного мозку у дітей)
+                  </p>
+                </div>
               </div>
-            </li>
-            <li class="services__item">
-              <div class="services__wrapper">
-                <img
-                  src="./images/services/img2.jpg"
-                  alt="Вид послуги"
-                  width="500"
-                />
-                <p class="services__text">Ехокардіографія (УЗД серця)</p>
+              <div class="swiper-slide">
+                <div class="services__wrapper">
+                  <img
+                    src="./images/services/img2.jpg"
+                    alt="Вид послуги"
+                    width="500"
+                  />
+                  <p class="services__text">Ехокардіографія (УЗД серця)</p>
+                </div>
               </div>
-            </li>
-            <li class="services__item">
-              <div class="services__wrapper">
-                <img
-                  src="./images/services/img8.jpg"
-                  alt="Вид послуги"
-                  width="500"
-                />
-                <p class="services__text">Консультація кардіолога</p>
+              <div class="swiper-slide">
+                <div class="services__wrapper">
+                  <img
+                    src="./images/services/img8.jpg"
+                    alt="Вид послуги"
+                    width="500"
+                  />
+                  <p class="services__text">Консультація кардіолога</p>
+                </div>
               </div>
-            </li>
-            <li class="services__item">
-              <div class="services__wrapper">
-                <img
-                  src="./images/services/img3.jpg"
-                  alt="Вид послуги"
-                  width="500"
-                />
-                <p class="services__text">Консультація гастроентеролога</p>
+              <div class="swiper-slide">
+                <div class="services__wrapper">
+                  <img
+                    src="./images/services/img3.jpg"
+                    alt="Вид послуги"
+                    width="500"
+                  />
+                  <p class="services__text">Консультація гастроентеролога</p>
+                </div>
               </div>
-            </li>
-            <li class="services__item">
-              <div class="services__wrapper">
-                <img
-                  src="./images/services/img4.jpg"
-                  alt="Вид послуги"
-                  width="500"
-                />
-                <p class="services__text">Консультація ендокринолога</p>
+              <div class="swiper-slide">
+                <div class="services__wrapper">
+                  <img
+                    src="./images/services/img4.jpg"
+                    alt="Вид послуги"
+                    width="500"
+                  />
+                  <p class="services__text">Консультація ендокринолога</p>
+                </div>
               </div>
-            </li>
-            <li class="services__item">
-              <div class="services__wrapper">
-                <img
-                  src="./images/services/img5.jpg"
-                  alt="Вид послуги"
-                  width="500"
-                />
-                <p class="services__text">Консультація ревматолога</p>
+              <div class="swiper-slide">
+                <div class="services__wrapper">
+                  <img
+                    src="./images/services/img5.jpg"
+                    alt="Вид послуги"
+                    width="500"
+                  />
+                  <p class="services__text">Консультація ревматолога</p>
+                </div>
               </div>
-            </li>
-            <li class="services__item">
-              <div class="services__wrapper">
-                <img
-                  src="./images/services/img7.jpg"
-                  alt="Вид послуги"
-                  width="500"
-                />
-                <p class="services__text">Консультація невролога</p>
+              <div class="swiper-slide">
+                <div class="services__wrapper">
+                  <img
+                    src="./images/services/img7.jpg"
+                    alt="Вид послуги"
+                    width="500"
+                  />
+                  <p class="services__text">Консультація невролога</p>
+                </div>
               </div>
-            </li>
-          </ul>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
       <section class="section publications" id="publications">
@@ -410,5 +417,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
