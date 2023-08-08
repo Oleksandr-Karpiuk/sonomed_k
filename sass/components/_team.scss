@@ -64,6 +64,8 @@
   display: block;
   text-decoration: none;
 
+  cursor: poiner;
+
   transition: box-shadow var(--duration) var(--timing-function);
 
   &:hover,
