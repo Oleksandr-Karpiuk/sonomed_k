@@ -1,6 +1,5 @@
 let lastScroll = 0;
 const defaultOffset = Math.round(window.innerHeight * 0.9);
-console.log(defaultOffset);
 const header = document.querySelector(".logo");
 const scaleClass = document.querySelector(".scale");
 
