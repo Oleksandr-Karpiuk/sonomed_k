@@ -689,7 +689,7 @@ ul {
   -webkit-transition: scale var(--duration) var(--timing-function);
   transition: scale var(--duration) var(--timing-function);
 }
-.social-networks__link:hover, .social-networks__link:focus {
+.social-networks__link:hover, .social-networks__link:focus-visible {
   scale: 1.2;
 }
 
@@ -748,7 +748,7 @@ ul {
 }
 
 .footer__link:hover,
-.footer__link:focus {
+.footer__link:focus-visible {
   color: var(--focus-color);
 }
 

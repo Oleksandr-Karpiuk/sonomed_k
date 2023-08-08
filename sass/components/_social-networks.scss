@@ -20,7 +20,7 @@
   transition: scale var(--duration) var(--timing-function);
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     scale: 1.2;
   }
 }
