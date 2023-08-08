@@ -48,8 +48,6 @@
 
 .logo {
   padding: 20px 0;
-  animation: scalePaddingToDefault var(--duration) var(--timing-function)
-    forwards;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,6 +61,11 @@
 
 .logo.scale {
   animation: scalePaddingToZero var(--duration) var(--timing-function) forwards;
+}
+
+.logo.scale-default {
+  animation: scalePaddingToDefault var(--duration) var(--timing-function)
+    forwards;
 }
 
 @keyframes scalePaddingToZero {

@@ -178,8 +178,7 @@ ul {
 }
 
 .logo {
-  -webkit-animation: scalePaddingToDefault var(--duration) var(--timing-function) forwards;
-          animation: scalePaddingToDefault var(--duration) var(--timing-function) forwards;
+  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,6 +198,11 @@ ul {
 .logo.scale {
   -webkit-animation: scalePaddingToZero var(--duration) var(--timing-function) forwards;
           animation: scalePaddingToZero var(--duration) var(--timing-function) forwards;
+}
+
+.logo.scale-default {
+  -webkit-animation: scalePaddingToDefault var(--duration) var(--timing-function) forwards;
+          animation: scalePaddingToDefault var(--duration) var(--timing-function) forwards;
 }
 
 @-webkit-keyframes scalePaddingToZero {

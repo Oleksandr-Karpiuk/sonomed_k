@@ -1,6 +1,7 @@
 let lastScroll = 0;
-const defaultOffset = 850;
+const defaultOffset = 700;
 const header = document.querySelector(".logo");
+const scaleClass = document.querySelector(".scale");
 
 const scrollPosition = () =>
   window.pageYOffset || document.documentElement.scrollTop;
@@ -13,8 +14,13 @@ window.addEventListener("scroll", () => {
     scrollPosition() > defaultOffset
   ) {
     header.classList.add("scale");
-  } else if (scrollPosition() < defaultOffset) {
+    header.classList.remove("scale-default");
+  } else if (
+    scrollPosition() < defaultOffset &&
+    scrollPosition() < lastScroll
+  ) {
     header.classList.remove("scale");
+    header.classList.add("scale-default");
   }
 
   lastScroll = scrollPosition();
