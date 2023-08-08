@@ -14,15 +14,14 @@
   height: 44px;
   border-radius: 50%;
   color: var(--icons-color);
-  background-color: var(--hero-footer-bcg);
+  background-color: rgba(33, 150, 243, 0.6);
+  color: var(--white-color);
 
-  transition: background-color var(--duration) var(--timing-function),
-    color var(--duration) var(--timing-function);
+  transition: scale var(--duration) var(--timing-function);
 
   &:hover,
   &:focus {
-    background-color: var(--focus-color);
-    color: var(--white-color);
+    scale: 1.2;
   }
 }
 

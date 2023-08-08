@@ -1,0 +1,143 @@
+.team__list {
+  display: flex;
+  gap: 8px;
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767.98px) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    max-width: 334px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.team__card-list {
+  @media screen and (max-width: 767.98px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+}
+
+.team__card-item {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 2) / 3);
+  }
+}
+
+.team__card-item:not(:last-child) {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 30px;
+  }
+}
+
+.team__card-link {
+  display: block;
+  text-decoration: none;
+
+  transition: box-shadow var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    & .team__overlay {
+      transform: translateY(0);
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.team__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.team__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translateY(101%);
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(195, 203, 214, 0.8);
+  backdrop-filter: blur(5px);
+
+  transition: transform var(--duration) var(--timing-function);
+}
+
+.team__overlay-description {
+  padding-left: 24px;
+  padding-right: 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: var(--white-color);
+}
+
+.team__card-description {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    flex-grow: 1;
+  }
+}
+
+.team__card-title {
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+
+.team__card-text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--secondary-color);
+}
