@@ -2,6 +2,7 @@ var swiper = new Swiper(".mySwiperServices", {
   effect: "coverflow",
   loop: true,
   grabCursor: true,
+  slideToClickedSlide: true,
   centeredSlides: true,
   slidesPerView: "auto",
   autoplay: {
