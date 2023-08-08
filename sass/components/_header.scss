@@ -47,6 +47,7 @@
 }
 
 .logo {
+  padding: 20px 0;
   animation: scalePaddingToDefault var(--duration) var(--timing-function)
     forwards;
   display: flex;
