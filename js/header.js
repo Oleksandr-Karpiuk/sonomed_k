@@ -1,10 +1,10 @@
 let lastScroll = 0;
-const defaultOffset = 300;
-const header = document.querySelector(".header");
+const defaultOffset = 850;
+const header = document.querySelector(".logo");
 
 const scrollPosition = () =>
   window.pageYOffset || document.documentElement.scrollTop;
-const containHide = () => header.classList.contains("hide");
+const containHide = () => header.classList.contains("scale");
 
 window.addEventListener("scroll", () => {
   if (
@@ -12,9 +12,9 @@ window.addEventListener("scroll", () => {
     !containHide() &&
     scrollPosition() > defaultOffset
   ) {
-    header.classList.add("hide");
-  } else if (scrollPosition() <= lastScroll && containHide()) {
-    header.classList.remove("hide");
+    header.classList.add("scale");
+  } else if (scrollPosition() < defaultOffset) {
+    header.classList.remove("scale");
   }
 
   lastScroll = scrollPosition();
