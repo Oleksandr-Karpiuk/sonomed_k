@@ -568,6 +568,7 @@ ul {
 .team__card-link {
   display: block;
   text-decoration: none;
+  cursor: pointer;
   -webkit-transition: -webkit-box-shadow var(--duration) var(--timing-function);
   transition: -webkit-box-shadow var(--duration) var(--timing-function);
   transition: box-shadow var(--duration) var(--timing-function);
