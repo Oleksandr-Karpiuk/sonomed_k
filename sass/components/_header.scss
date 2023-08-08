@@ -9,13 +9,17 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   z-index: 999;
 
-  // border-bottom: 1px solid #ececec;
+  transition: transform 1s var(--timing-function);
 
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   }
 
   @media screen and (min-width: 1200px) {
   }
+}
+
+.header.hide {
+  transform: translateY(-100%);
 }
 
 .header-container {
