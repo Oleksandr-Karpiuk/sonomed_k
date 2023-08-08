@@ -178,7 +178,8 @@ ul {
 }
 
 .logo {
-  padding: 20px 0;
+  -webkit-animation: scalePaddingToDefault var(--duration) var(--timing-function) forwards;
+          animation: scalePaddingToDefault var(--duration) var(--timing-function) forwards;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,9 +197,43 @@ ul {
 }
 
 .logo.scale {
-  padding: 0;
+  -webkit-animation: scalePaddingToZero var(--duration) var(--timing-function) forwards;
+          animation: scalePaddingToZero var(--duration) var(--timing-function) forwards;
 }
 
+@-webkit-keyframes scalePaddingToZero {
+  from {
+    padding: 20px 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+
+@keyframes scalePaddingToZero {
+  from {
+    padding: 20px 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+@-webkit-keyframes scalePaddingToDefault {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 20px 0;
+  }
+}
+@keyframes scalePaddingToDefault {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 20px 0;
+  }
+}
 .logo__icon {
   color: black;
 }
@@ -720,9 +755,8 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -761,7 +795,7 @@ ul {
 }
 
 .footer__rights {
-  padding: 30px 0 0 15px;
+  padding-top: 30px;
 }
 
 .footer__rights-text {

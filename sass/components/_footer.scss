@@ -12,7 +12,7 @@
 
 .footer-flex {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: baseline;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .footer__rights {
-  padding: 30px 0 0 15px;
+  padding-top: 30px;
 }
 
 .footer__rights-text {
